@@ -1,3 +1,4 @@
+```
 ├── app
 │   ├── core
 │   │   ├── api
@@ -23,7 +24,7 @@
 ├── README.md
 ├── alembic.ini
 └── requirements.txt
-
+```
 # Setting up the project
 
 1. Clone the repository from GitHub.
