@@ -88,8 +88,8 @@ async def get_current_admin(token: str = Depends(oauth2_scheme), db: Session = D
 async def get_swagger_access(credentials: HTTPBasicCredentials = Depends(security)):
     """Authenticate Swagger UI access using HTTP basic authentication"""
     # Check that the username and password are correct
-    correct_username = secrets.compare_digest(credentials.username, settings.username)
-    correct_password = secrets.compare_digest(credentials.password, settings.password)
+    correct_username = secrets.compare_digest(credentials.username, settings.swagger_username)
+    correct_password = secrets.compare_digest(credentials.password, settings.swagger_password)
     if not (correct_username and correct_password):
         # Raise an exception if the credentials are incorrect
         raise HTTPException(

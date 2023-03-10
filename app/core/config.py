@@ -15,8 +15,8 @@ class Settings(BaseSettings):
     algorithm: str
     access_token_expire_minutes: int
 
-    username: str
-    password: str
+    swagger_username: str
+    swagger_password: str
 
 
 
