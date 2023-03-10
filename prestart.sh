@@ -16,4 +16,4 @@ alembic upgrade head
 
 # alembic revision --autogenerate -m "initial"
 
-alembic upgrade head
+# alembic upgrade head
