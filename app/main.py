@@ -36,7 +36,7 @@ app.add_middleware(
 )
 
 # Create database tables from the metadata defined in the `models` module.
-# models.Base.metadata.create_all(bind=database.engine)
+models.Base.metadata.create_all(bind=database.engine)
 
 # Define an endpoint for retrieving the Swagger UI documentation.
 @app.get("/docs", include_in_schema=False)
