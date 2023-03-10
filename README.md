@@ -114,3 +114,34 @@
 
 8. Navigate to http://localhost:8000/docs to see the Swagger UI and interact with the API. 
     `Note`: the Swagger credentials are in `.env` file
+
+
+# Setting up the project with Docker
+
+1. Clone the repository from GitHub.
+    ```
+    git clone https://github.com/Otabek0626/FastAPI_Starter.git
+    ```
+
+2. Enter the cloned project folder.
+    ```
+    cd FastAPI_Starter
+    ```
+
+3. Build the docker compose:
+    ```
+    docker-compose up --build -d
+    ```
+
+4. Open the fastapi container terminal and then make migrations.
+    - makemigrations
+        ```
+        alembic revision --autogenerate -m "initial"
+        ```
+    - migrate
+        ```
+        alembic upgrade head
+        ```
+
+5. Navigate to http://localhost:8000/docs to see the Swagger UI and interact with the API. 
+    `Note`: the Swagger credentials are in `.env` file
