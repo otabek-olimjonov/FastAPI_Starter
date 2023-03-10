@@ -56,7 +56,7 @@
     - For Windows:
 
         ```
-        .venv\Scripts\activate.bat
+        .\.venv\Scripts\activate.ps1
         ```
 
     - For Linux or macOS:
