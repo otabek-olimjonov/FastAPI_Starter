@@ -97,14 +97,14 @@
 
 
 7. Set up the database using alembic by running the following command:
-    makemigrations
-    ```
-    alembic revision --autogenerate -m "initial"
-    ```
-    migrate
-    ```
-    alembic upgrade head
-    ```
+    - makemigrations
+        ```
+        alembic revision --autogenerate -m "initial"
+        ```
+    - migrate
+        ```
+        alembic upgrade head
+        ```
 
 8. Start the server:
 
@@ -113,4 +113,4 @@
     ```
 
 8. Navigate to http://localhost:8000/docs to see the Swagger UI and interact with the API. 
-    Note: the Swagger credentials are in `.env` file
+    `Note`: the Swagger credentials are in `.env` file
